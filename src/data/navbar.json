@@ -1,0 +1,46 @@
+{
+  "navlinks": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Shop",
+      "url": "/shop"
+    },
+    {
+      "title": "Tournaments",
+      "url": "/tournaments",
+      "dropdownLinks": [
+        {
+          "title": "Link 1",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "Matchfinder",
+      "url": "/matchfinder",
+      "dropdownLinks": [
+        {
+          "title": "Link 1",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "News",
+      "url": "/news"
+    },
+    {
+      "title": "More",
+      "url": "/more",
+      "dropdownLinks": [
+        {
+          "title": "Link 1",
+          "url": "/"
+        }
+      ]
+    }
+  ]
+}

@@ -3,31 +3,65 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary: #67FCF1;
+  --bg-secondary-100: #202833;
+  --bg-secondary-200: #202020;
+  --bg-primary: #0A0B10;
+  --accent: #99EE2D;
+  --text-100: #ffffff;
+  --text-200: #eaeaea;
+  --text-300: #CECECE;
+  --text-400: #8A8A8C;
+  --text-500: #838688;
+  --bg-gradient: linear-gradient(180deg, #0A0B10 0%, #10141C 100%);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #0B0C12;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-200);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn-basic {
+  position: relative;
+  /* -webkit-clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); */
+  clip-path: polygon(80% 0%, 100% 50%, 100% 100%, 0 100%, 0 0);
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  color: #222222;
+
+
+  @apply py-3 xl:py-4 bg-primary font-semibold transition-all duration-300 whitespace-nowrap pl-6 pr-12 lg:pl-7 lg:pr-14 xl:pl-8 xl:pr-16;
+}
+
+.btn-basic:hover {
+  box-shadow: 0px 0px 34px 0px #F5FFE64D;
+}
+
+.btn-basic.secondary {
+  @apply bg-accent;
+}
+
+.shine-gradient {
+  mix-blend-mode: lighten;
+  background: radial-gradient(49% 81% at 45% 47%, #0c897a1b 0%, #073AFF00 100%);
+}
+
+.mix-gradient {
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+}
+
+.date-card {
+  /* clip-path: polygon(0 0, 100% 0, 100% 69%, 46% 69%, 46% 100%, 0 100%, 0% 70%, 0% 30%); */
+}
+
+.glassEffect {
+  backdrop-filter: blur(4px) saturate(112%);
+  -webkit-backdrop-filter: blur(4px) saturate(112%);
+  background-color: rgba(255, 255, 255, 0.09);
+  /* border-radius: 12px; */
+  /* border: 1px solid rgba(209, 213, 219, 0.3); */
 }
