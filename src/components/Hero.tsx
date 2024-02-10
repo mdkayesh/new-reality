@@ -1,21 +1,19 @@
-import React from "react";
-import Button from "./Button";
 import Image from "next/image";
-import DateCart from "./DateCard";
+import { HiPlus } from "react-icons/hi";
+import Button from "./Button";
 import DateCard from "./DateCard";
 
 const Hero = () => {
   return (
-    <section className="hero pb-20">
+    <section className="hero relative overflow-hidden">
+      <div className="shine-gradient absolute -translate-x-1/2 left-0 -bottom-1/2 w-[663px] h-[663px] rounded-full" />
+      <div className="shine-gradient absolute translate-x-1/2 right-0 -bottom-1/2 w-[663px] h-[663px] rounded-full" />
       <div className="bg-[url('../../public/assets/herobg.jpg')] bg-center bg-cover">
-        <div className="relative w-full h-full mix-gradient overflow-hidden">
-          <div className="shine-gradient absolute -translate-x-1/2 left-0 -bottom-1/2 w-[663px] h-[663px] rounded-full" />
-          <div className="shine-gradient absolute translate-x-1/2 right-0 -bottom-1/2 w-[663px] h-[663px] rounded-full" />
-
+        <div className="w-full h-full mix-gradient">
           {/* container */}
-          <div className="container flex flex-col gap-y-10 lg:flex-row py-[100px] relative z-10">
+          <div className="container flex flex-col gap-y-10 lg:flex-row py-[100px] relative z-10 overflow-hidden">
             <div className="max-w-[538px]">
-              <h1 className="text-[40px] font-semibold uppercase">
+              <h1 className="text-[40px] font-semibold uppercase text-text-100">
                 wellcome new game <br /> and earn money
               </h1>
               <p className="mt-10">
@@ -25,8 +23,11 @@ const Hero = () => {
                 arcu. Eu aliquet mi tempor arcu quis.
               </p>
 
-              <Button tag="button" btnClass="mt-8">
-                Join Free
+              <Button tag="button" btnClass="mt-8 flex items-center gap-2">
+                <span>Join Free</span>
+                <span>
+                  <HiPlus />
+                </span>
               </Button>
             </div>
 

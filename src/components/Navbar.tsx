@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import navData from "@/data/navbar.json";
 import Link from "next/link";
@@ -11,29 +11,30 @@ import { HiPlus } from "react-icons/hi";
 import { RiMenu3Fill } from "react-icons/ri";
 import Image from "next/image";
 import Button from "./Button";
+import Dropdown from "./Dropdown";
+import CloseToOutClick from "./CloseToOutClick";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="header">
       <div className="container">
-        <nav
-          className="py-5 flex gap-4 justify-between items-center
-        "
-        >
+        <nav className="py-5 flex gap-4 justify-between items-center">
           {/* left */}
           <div className="flex gap-10 items-center">
             <Logo />
 
             <ul className="gap-5 items-center hidden min-[1160px]:flex">
               {navData.navlinks.map((link) => (
-                <li key={link.title}>
+                <li key={link.title} className="group relative">
                   <Link
                     href={link.url}
                     className={`${
                       pathname === link.url ? "text-primary" : ""
-                    } flex gap-1 items-center`}
+                    } flex gap-1 items-center group-hover:text-primary py-2`}
                   >
                     <span>{link.title}</span>
                     {link.dropdownLinks && (
@@ -42,6 +43,20 @@ const Navbar = () => {
                       </span>
                     )}
                   </Link>
+                  {link.dropdownLinks && (
+                    <ul className="absolute top-full left-0 w-[160px] rounded-xl z-50 bg-bg-secondary-200 overflow-hidden opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+                      {link.dropdownLinks.map((link) => (
+                        <li key={link.title}>
+                          <Link
+                            href={link.url}
+                            className="block px-4 py-2 w-full hover:bg-bg-secondary-100"
+                          >
+                            {link.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
@@ -58,24 +73,57 @@ const Navbar = () => {
             >
               <RiMenu3Fill />
             </button>
-            <div className="search pt-1">
-              <button type="button" title="search" className="text-2xl">
-                <MdOutlineSearch />
-              </button>
-            </div>
+            <CloseToOutClick onClose={() => setIsOpen(false)} isOpen={isOpen}>
+              <div className="search pt-1 relative">
+                <button
+                  type="button"
+                  title="search"
+                  className="text-2xl"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <MdOutlineSearch />
+                </button>
 
-            <div className="lang hidden gap-2 items-center min-[1160px]:flex">
-              <Image
-                src={"/assets/usflag.png"}
-                width={100}
-                height={30}
-                alt="usflag"
-                className="w-[30px] h-[25px]"
-              />
-              <span>EN</span>
-              <span>
-                <IoCaretDownSharp />
-              </span>
+                <Dropdown
+                  isOpen={isOpen}
+                  className="px-4 rounded-lg -translate-x-full !left-full !w-[200px]"
+                >
+                  <SearchBar underline={false} />
+                </Dropdown>
+              </div>
+            </CloseToOutClick>
+
+            {/* language */}
+            <div className="group relative hidden min-[1160px]:block">
+              <button
+                type="button"
+                className="lang gap-2 group-hover:text-primary items-center flex"
+              >
+                <Image
+                  src={"/assets/usflag.png"}
+                  width={100}
+                  height={30}
+                  alt="usflag"
+                  className="w-[30px] h-[25px]"
+                />
+                <span>EN</span>
+                <span>
+                  <IoCaretDownSharp />
+                </span>
+              </button>
+
+              <ul className="absolute top-full left-0 w-[160px] rounded-xl z-50 bg-bg-secondary-200 overflow-hidden opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+                {navData.languages.map((lang) => (
+                  <li key={lang.title}>
+                    <button
+                      type="button"
+                      className="flex w-full px-5 py-2 hover:bg-bg-secondary-100"
+                    >
+                      {lang.title}
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="devider h-[35px] w-[1px] bg-text-100 hidden md:block" />

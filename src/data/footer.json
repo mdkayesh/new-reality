@@ -1,0 +1,32 @@
+{
+  "leftLinks": [
+    {
+      "title": "About",
+      "url": "/about"
+    },
+    {
+      "title": "Tournament",
+      "url": "/tournament"
+    },
+    {
+      "title": "Ladder",
+      "url": "/ladder"
+    },
+    {
+      "title": "Community",
+      "url": "/community"
+    },
+    {
+      "title": "Stream",
+      "url": "/stream"
+    },
+    {
+      "title": "Blog",
+      "url": "/blog"
+    },
+    {
+      "title": "Help Center",
+      "url": "/help-center"
+    }
+  ]
+}

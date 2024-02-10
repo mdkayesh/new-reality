@@ -1,0 +1,65 @@
+{
+  "tournaments": [
+    {
+      "id": 1,
+      "title": "Path to power",
+      "slogan": "League of Legends",
+      "entry": "free",
+      "mode": "1v1",
+      "prize": "$650",
+      "imgUrl": "/assets/tournament1.png",
+      "contrast": "light"
+    },
+    {
+      "id": 2,
+      "title": "Dutiful deadmatch",
+      "slogan": "Playerunknown’s Battlegrounds",
+      "entry": "free",
+      "mode": "1v1",
+      "prize": "$650",
+      "imgUrl": "/assets/tournament2.png",
+      "contrast": "light"
+    },
+    {
+      "id": 3,
+      "title": "Open fire all stars",
+      "slogan": "Valorant",
+      "entry": "free",
+      "mode": "1v1",
+      "prize": "$650",
+      "imgUrl": "/assets/tournament3.png",
+      "contrast": "dark"
+    },
+
+    {
+      "id": 4,
+      "title": "Path to power",
+      "slogan": "League of Legends",
+      "entry": "free",
+      "mode": "1v1",
+      "prize": "$650",
+      "imgUrl": "/assets/tournament3.png",
+      "contrast": "dark"
+    },
+    {
+      "id": 5,
+      "title": "Path to power",
+      "slogan": "League of Legends",
+      "entry": "free",
+      "mode": "1v1",
+      "prize": "$650",
+      "imgUrl": "/assets/tournament2.png",
+      "contrast": "light"
+    },
+    {
+      "id": 6,
+      "title": "Path to power",
+      "slogan": "League of Legends",
+      "entry": "free",
+      "mode": "1v1",
+      "prize": "$650",
+      "imgUrl": "/assets/tournament1.png",
+      "contrast": "light"
+    }
+  ]
+}

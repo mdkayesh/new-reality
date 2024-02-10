@@ -1,0 +1,88 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb3.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    },
+    {
+      "id": 2,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb2.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    },
+    {
+      "id": 3,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb1.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    },
+    {
+      "id": 4,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb2.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    },
+    {
+      "id": 5,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb1.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    },
+    {
+      "id": 6,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb3.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    },
+    {
+      "id": 7,
+      "platform": "Rahul Platform",
+      "imgUrl": "/assets/thumb2.png",
+      "entryFee": "$19.93",
+      "teamSize": "1v1",
+      "competition": "NA + EU | CDL Search and Destroy | Best of 1",
+      "skillLevel": "All Skills",
+      "support": "Tickets",
+      "starting": "Available now",
+      "info": "info"
+    }
+  ]
+}

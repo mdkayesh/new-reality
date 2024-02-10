@@ -1,0 +1,60 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game1.png",
+      "category": ["latest", "game", "xbox", "pc"]
+    },
+    {
+      "id": 2,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game1.png",
+      "category": ["latest", "xbox", "pc"]
+    },
+    {
+      "id": 3,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game3.png",
+      "category": ["latest", "pc"]
+    },
+    {
+      "id": 4,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game2.png",
+      "category": ["latest", "xbox"]
+    },
+    {
+      "id": 5,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game1.png",
+      "category": ["latest", "pc"]
+    },
+    {
+      "id": 6,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game1.png",
+      "category": ["latest", "game", "xbox", "pc"]
+    },
+    {
+      "id": 7,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game3.png",
+      "category": ["latest", "game"]
+    },
+    {
+      "id": 8,
+      "title": "Rayes night game",
+      "desc": "Aenean non vulputate quam, eu lamcorper mauris ullamcorper",
+      "imgUrl": "/assets/game2.png",
+      "category": ["latest", "game", "pc"]
+    }
+  ]
+}

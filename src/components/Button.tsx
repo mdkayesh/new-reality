@@ -1,10 +1,5 @@
-import {
-  ReactNode,
-  useRef,
-  AnchorHTMLAttributes,
-  ButtonHTMLAttributes,
-} from "react";
 import Link, { LinkProps } from "next/link";
+import { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
@@ -36,7 +31,6 @@ const Button = (props: ButtonProps & (linkType | btnType | anchorType)) => {
         className={`btn-basic ${
           variant === "primary" ? "" : "secondary"
         } ${btnClass}`}
-        data-cursor="-hidden invisible"
         {...(rest as linkType)} // Cast to linkType
       >
         {children}
@@ -48,7 +42,6 @@ const Button = (props: ButtonProps & (linkType | btnType | anchorType)) => {
         className={`btn-basic ${btnClass} ${
           variant === "primary" ? "" : "secondary"
         }`}
-        data-cursor="-hidden invisible"
         {...(rest as btnType)} // Cast to btnType
       >
         {children}
@@ -60,8 +53,6 @@ const Button = (props: ButtonProps & (linkType | btnType | anchorType)) => {
         className={`btn-basic ${
           variant === "primary" ? "" : "secondary"
         } ${btnClass}`}
-        target="_blank"
-        data-cursor="-hidden invisible"
         {...(rest as anchorType)} // Cast to linkType
       >
         {children}

@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --primary: #67FCF1;
-  --bg-secondary-100: #202833;
-  --bg-secondary-200: #202020;
+  --bg-secondary-100: #121419;
+  --bg-secondary-200: #202833;
+  --bg-secondary-300: #202020;
   --bg-primary: #0A0B10;
   --accent: #99EE2D;
   --text-100: #ffffff;
@@ -14,6 +16,20 @@
   --text-400: #8A8A8C;
   --text-500: #838688;
   --bg-gradient: linear-gradient(180deg, #0A0B10 0%, #10141C 100%);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bg-secondary-100);
+  border-radius: 12px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: var(--bg-secondary-200);
+  border-radius: 12px;
 }
 
 body {
@@ -26,13 +42,12 @@ body {
 
 .btn-basic {
   position: relative;
-  /* -webkit-clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); */
+  -webkit-clip-path: polygon(80% 0%, 100% 50%, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(80% 0%, 100% 50%, 100% 100%, 0 100%, 0 0);
   -webkit-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
   color: #222222;
-
 
   @apply py-3 xl:py-4 bg-primary font-semibold transition-all duration-300 whitespace-nowrap pl-6 pr-12 lg:pl-7 lg:pr-14 xl:pl-8 xl:pr-16;
 }
@@ -47,7 +62,9 @@ body {
 
 .shine-gradient {
   mix-blend-mode: lighten;
-  background: radial-gradient(49% 81% at 45% 47%, #0c897a1b 0%, #073AFF00 100%);
+  background: #0A0B10;
+  background: radial-gradient(50% 50% at 50% 50%, hsl(173, 88%, 10%) 0%, rgba(10, 11, 16, 0) 100%);
+  /* background: radial-gradient(circle, hsla(173, 85%, 13%, 0.113) 0%, rgba(10, 11, 16, 0) 100%); */
 }
 
 .mix-gradient {

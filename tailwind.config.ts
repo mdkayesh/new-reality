@@ -12,6 +12,7 @@ const config: Config = {
         primary: "var(--primary)",
         "bg-secondary-100": "var(--bg-secondary-100)",
         "bg-secondary-200": "var(--bg-secondary-200)",
+        "bg-secondary-300": "var(--bg-secondary-300)",
         "bg-primary": "var(--bg-primary)",
         accent: "var(--accent)",
         "text-100": "var(--text-100)",
