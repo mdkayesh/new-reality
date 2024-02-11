@@ -1,8 +1,8 @@
-import Game from "@/components/Game";
-import Hero from "@/components/Hero";
-import MatchGame from "@/components/MatchGame";
-import Subscribe from "@/components/Subscribe";
-import Tournament from "@/components/Tournament";
+import Game from "@/components/pages/landingPage/Game";
+import Hero from "@/components/pages/landingPage/Hero";
+import MatchGame from "@/components/pages/landingPage/MatchGame";
+import Subscribe from "@/components/pages/landingPage/Subscribe";
+import Tournament from "@/components/pages/landingPage/Tournament";
 
 export default function Home() {
   return (

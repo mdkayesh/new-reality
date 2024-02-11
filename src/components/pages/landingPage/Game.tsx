@@ -3,9 +3,9 @@
 import games from "@/data/games.json";
 import { useState } from "react";
 import { HiPlus } from "react-icons/hi";
-import Button from "./Button";
-import NewsCard from "./NewsCard";
-import SearchBar from "./SearchBar";
+import Button from "../../Button";
+import NewsCard from "../../NewsCard";
+import SearchBar from "../../SearchBar";
 
 const Game = () => {
   const [activeBtn, setActiveBtn] = useState("Latest");

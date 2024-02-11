@@ -8,11 +8,11 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 // import required modules
-import { FreeMode } from "swiper/modules";
 import tournamentData from "@/data/tournaments.json";
 import Image from "next/image";
-import Button from "./Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { FreeMode } from "swiper/modules";
+import Button from "./Button";
 
 const SliderTournament = () => {
   return (

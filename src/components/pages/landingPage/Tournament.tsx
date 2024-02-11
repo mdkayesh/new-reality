@@ -1,5 +1,5 @@
-import SectionTitle from "./SectionTitle";
-import SliderTournament from "./SliderTournament";
+import SectionTitle from "../../SectionTitle";
+import SliderTournament from "../../SliderTournament";
 
 const Tournament = () => {
   return (

@@ -19,7 +19,6 @@ const CloseToOutClick = ({
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      console.log(event.target);
       const ref = containerRef.current! as HTMLDivElement;
       if (ref && !ref?.contains(event.target as Node)) {
         onClose();

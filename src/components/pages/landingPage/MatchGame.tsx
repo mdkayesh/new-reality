@@ -1,6 +1,6 @@
-import MatchGameTab from "./MatchGameTab";
-import SectionTitle from "./SectionTitle";
-import SelectDropdown from "./SelectDropdown";
+import MatchGameTab from "../../MatchGameTab";
+import SectionTitle from "../../SectionTitle";
+import SelectDropdown from "../../SelectDropdown";
 
 const MatchGame = () => {
   return (
